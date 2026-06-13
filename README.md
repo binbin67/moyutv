@@ -1,4 +1,4 @@
-# Premium IPTV Player for Android TV
+ding'yue# Premium IPTV Player for Android TV
 
 [![Platform](https://img.shields.io/badge/Platform-Android%20TV%20%2F%20Leanback-green.svg)](https://developer.android.com/tv)
 [![API Level](https://img.shields.io/badge/API-21%2B-blue.svg)](https://developer.android.com/about/dashboards)
@@ -18,7 +18,14 @@
 *   **socks5**: 示例格式: CCTV1,socks5://ip:port&http://live2.rxip.sc96655.com/live/CCTV-1H265_4000.m3u8?E=1&U=1&A=1&K=1&P=1&S=1
 。
 *   **webview**: 示例格式: CCTV1,webview://https://yangshipin.cn/tv/home?pid=600001859
+
+### 3. ⚡ JS 脚本支持
+*   **本地脚本**: 本地的 JS 脚本（比如 migu.js）塞进电视机根目录下的 摸鱼TV/js 文件夹里，然后在直播源里写 local://migu.js/63178053
 。
+*   **远程脚本**: JS 脚本（比如 migu.js）放在远程服务器、空间、网盘里，然后在直播源里写 https://你的远程地址/migu.js/63178053
+
+### 4. ⚡ YouTube 网页直播
+*   **油管webview**: 自动识别到 YouTube 网页，即启动代理播放。代理池订*   **代理设置**: 支持单条代理URL设置，支持。。
 
 ### 3. 🎯 智能 EPG 模糊匹配
 *   **高性能匹配**: 采用高度优化的模糊拼音及字符相似度算法，自动将播放列表中的台名与 EPG 节目单进行高精度匹配。
