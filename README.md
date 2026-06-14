@@ -37,7 +37,13 @@
 *   **快捷选台**: 稳定支持数字键直接选台及 OK/CENTER 键呼出频道列表与设置菜单。
 
 ---
+## 🚀 软件截图
+<img width="1280" height="720" alt="1d1492c2-6b65-48d2-b310-a0fa54677e65" src="https://github.com/user-attachments/assets/2f8e84ec-33c7-4bf8-8083-eb7e403a5f7d" />
+<img width="1280" height="720" alt="6dc63007-f906-4cf6-9dda-ec1667838ceb" src="https://github.com/user-attachments/assets/dbffac87-1a05-4b21-93ae-f179bd1fca6a" />
+<img width="1280" height="720" alt="1ba4763d-c233-4589-ae70-9d19f1639922" src="https://github.com/user-attachments/assets/aa201188-8723-4408-a2a5-ed1520996abc" />
+<img width="1280" height="720" alt="0d0055ee-0917-4e91-bb22-387ffe49db5e" src="https://github.com/user-attachments/assets/dc4908d5-bcb5-4c97-ac41-ed210a45e3c7" />
 
+---
 ## 🏗️ 编译与运行
 
 ### 前提条件 (Prerequisites)
