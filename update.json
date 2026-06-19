@@ -2,5 +2,5 @@
   "versionCode": 109,
   "versionName": "1.0.9",
   "updateUrl": "https://gh-proxy.com/https://github.com/sfee1212/moyutv/releases/download/v1.0.9/moyu_v1.0.9.apk",
-  "updateInfo": "1. 优化WebView，可以选择下载X5内核。\n2. 优化SK5代理播放。\n3.优化MPV解码。 "
+  "updateInfo": "1. 优化WebView，可以选择下载X5内核。\n2. 优化SK5代理播放。\n3.优化MPV解码。\n4. 修复遥控器问题。 "
 }
