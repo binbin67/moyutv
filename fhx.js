@@ -148,7 +148,7 @@ function getPlayUrl(args) {
                 return data.data.live_url;
             } else if (quality === 'fhd') {
 
-                var fallbackUrl = 'https://m.fengshows.com/api/v3/hub/live/auth-url?live_qa=hd&live_id=' + chid;
+                var fallbackUrl = 'https://m.fengshows.com/api/v3/hub/live/auth-url?live_id=' + chid;
                 var fallbackHeaders = {
                     "User-Agent": "Mozilla/5.0 (Linux; Android 10; SM-G960U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36",
                     "Referer": "https://m.fengshows.com/",
