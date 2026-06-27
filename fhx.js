@@ -1,6 +1,6 @@
 const PHONE_PREFIX = "86";
-const PHONE = "18062763898"; // 在这里填入您的凤凰秀手机号
-const PWD = "li123123";     // 在这里填入您的凤凰秀密码
+const PHONE = "替换成您的手机号"; // 在这里填入您的凤凰秀手机号
+const PWD = "替换成您的密码";     // 在这里填入您的凤凰秀密码
 
 function readToken() {
     try {
@@ -124,7 +124,7 @@ function getPlayUrl(args) {
     var quality = "hd"; // 降级兜底画质
     
     // 只有当用户真的填写了账号密码，才走登录逻辑
-    if (PHONE !== "18062763898" && PWD !== "li123123") {
+    if (PHONE !== "替换成您的手机号" && PWD !== "替换成您的密码") {
         token = getToken();
         if (token) {
             quality = "fhd"; // 拿到Token后尝试请求1080P全高清
