@@ -71,7 +71,7 @@ function validateJWT(token) {
         if (!exp) return true;
         
         var now = Math.floor(java.lang.System.currentTimeMillis() / 1000);
-        return exp > (now + 300); 
+        return exp > (now + 300);
     } catch (e) {
         return false;
     }
@@ -120,20 +120,20 @@ function getPlayUrl(args) {
     var token = "";
     var quality = "hd"; 
     
-    // 只有当用户真的填写了账号密码，才走登录逻辑
+
     if (PHONE !== "替换成您的手机号" && PWD !== "替换成您的密码") {
         token = getToken();
         if (token) {
-            quality = "fhd"; 
+            quality = "fhd";
         }
     }
 
-    var apiUrl = 'https://api.fengshows.cn/hub/live/auth-url?live_qa=' + quality + '&live_id=' + chid;
+    var apiUrl = 'https://m.fengshows.com/api/v3/hub/live/auth-url?live_qa=' + quality + '&live_id=' + chid;
     
     var headers = {
         "User-Agent": "Mozilla/5.0 (Linux; Android 10; SM-G960U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36",
-        "Referer": "https://www.fengshows.com/live",
-        "Origin": "https://www.fengshows.com"
+        "Referer": "https://m.fengshows.com/",
+        "Origin": "https://m.fengshows.com"
     };
     
     if (token) {
@@ -145,22 +145,20 @@ function getPlayUrl(args) {
         if (responseText) {
             var data = JSON.parse(responseText);
             if (data && data.data && data.data.live_url) {
-                var m3u8Url = data.data.live_url.replace(".flv?", ".m3u8?");
-                return m3u8Url + "|User-Agent=Mozilla/5.0 (Linux; Android 10; SM-G960U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36&Referer=https://www.fengshows.com/live";
+                return data.data.live_url;
             } else if (quality === 'fhd') {
 
-                var fallbackUrl = 'https://api.fengshows.cn/hub/live/auth-url?live_qa=hd&live_id=' + chid;
+                var fallbackUrl = 'https://m.fengshows.com/api/v3/hub/live/auth-url?live_qa=hd&live_id=' + chid;
                 var fallbackHeaders = {
                     "User-Agent": "Mozilla/5.0 (Linux; Android 10; SM-G960U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36",
-                    "Referer": "https://www.fengshows.com/live",
-                    "Origin": "https://www.fengshows.com"
+                    "Referer": "https://m.fengshows.com/",
+                    "Origin": "https://m.fengshows.com"
                 };
                 var fallbackRes = HttpBridge.fetchWithHeaders(fallbackUrl, JSON.stringify(fallbackHeaders));
                 if (fallbackRes) {
                     var fbData = JSON.parse(fallbackRes);
                     if (fbData && fbData.data && fbData.data.live_url) {
-                        var fbM3u8Url = fbData.data.live_url.replace(".flv?", ".m3u8?");
-                        return fbM3u8Url + "|User-Agent=Mozilla/5.0 (Linux; Android 10; SM-G960U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36&Referer=https://www.fengshows.com/live";
+                        return fbData.data.live_url;
                     }
                 }
             }
