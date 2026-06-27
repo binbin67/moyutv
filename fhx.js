@@ -124,7 +124,7 @@ function getPlayUrl(args) {
     var quality = "hd"; // 降级兜底画质
     
     // 只有当用户真的填写了账号密码，才走登录逻辑
-    if (PHONE !== "替换成您的手机号" && PWD !== "替换成您的密码") {
+    if (PHONE !== "18062763898" && PWD !== "li123123") {
         token = getToken();
         if (token) {
             quality = "fhd"; // 拿到Token后尝试请求1080P全高清
