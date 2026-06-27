@@ -146,12 +146,6 @@ webview://https://tv.gxtv.cn/channel/channelivePlay_67eace939278435bb4bca90800fb
 #EXTINF:-1 tvg-name="CETV4" tvg-logo="https://logo.catvod.com/CETV4.png" group-title="央视",CETV4
 webview://https://edu.cctv.com/cetv/
 #EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://logo.catvod.com/凤凰资讯.png" group-title="卫视",凤凰资讯
-https://gitee.com/ace89/moyutv/raw/main/fhx.js/fhzx
-#EXTINF:-1 tvg-name="凤凰中文" tvg-logo="https://logo.catvod.com/凤凰中文.png" group-title="卫视",凤凰中文
-https://gitee.com/ace89/moyutv/raw/main/fhx.js/fhzw
-#EXTINF:-1 tvg-name="凤凰香港" tvg-logo="https://logo.catvod.com/凤凰香港.png" group-title="卫视",凤凰香港
-https://gitee.com/ace89/moyutv/raw/main/fhx.js/fhhk
-#EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://logo.catvod.com/凤凰资讯.png" group-title="卫视",凤凰资讯
 https://gh-proxy.com/https://github.com/sfee1212/moyutv/raw/main/fhx.js/fhzx
 #EXTINF:-1 tvg-name="凤凰中文" tvg-logo="https://logo.catvod.com/凤凰中文.png" group-title="卫视",凤凰中文
 https://gh-proxy.com/https://github.com/sfee1212/moyutv/raw/main/fhx.js/fhzw
