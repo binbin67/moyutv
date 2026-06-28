@@ -1,6 +1,6 @@
 {
-  "versionCode": 113,
-  "versionName": "1.1.3",
-  "updateUrl": "https://gh-proxy.com/https://github.com/sfee1212/moyutv/releases/download/v1.1.3/moyu_v1.1.3.apk",
-  "updateInfo": "1. UI回返。\n2. MPV解码修复。\n3. BUG修复。 "
+  "versionCode": 115,
+  "versionName": "1.1.5",
+  "updateUrl": "https://gh-proxy.com/https://github.com/sfee1212/moyutv/releases/download/v1.1.5/_v1.1.5.apk",
+  "updateInfo": "1. UI增加节目信息展示。\n2. 彻底移除内置节目。\n3. 其他修缮。 "
 }
